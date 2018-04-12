@@ -1,7 +1,11 @@
 # NuGet Packages
 *.nupkg
-# The packages folder
+# The packages folder can be ignored because of Package Restore
 **/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# If using the old MSBuild-Integrated Package Restore, uncomment this:
+#!**/packages/repositories.config
 
 # Build results
 [Dd]ebug/
@@ -15,7 +19,6 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Pp]roperties/
-packages/
 
 *_i.c
 *_p.c
