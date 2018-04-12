@@ -14,6 +14,8 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+[Pp]roperties/
+packages/
 
 *_i.c
 *_p.c
